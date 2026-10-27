@@ -8,11 +8,20 @@
 <meta property="og:title" content="The Wake-Up Call! How You Sleep Is How You Live">
 <meta property="og:description" content="A memoir by respiratory therapist and Caribbean sleep health advocate Gregory Arneaud. Foreword by Dr. Eric Thomas.">
 <meta property="og:type" content="book">
-<meta property="og:image" content="assets/cover.webp">
-<link rel="icon" href="assets/cover.webp" type="image/webp">
+<meta property="og:url" content="https://gregory-website.pages.dev/">
+<meta property="og:site_name" content="The Wake-Up Call!">
+<meta property="og:image" content="https://gregory-website.pages.dev/assets/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Wake-Up Call! How You Sleep Is How You Live, a memoir by Gregory Arneaud">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Wake-Up Call! How You Sleep Is How You Live">
+<meta name="twitter:description" content="A memoir by respiratory therapist and Caribbean sleep health advocate Gregory Arneaud. Foreword by Dr. Eric Thomas.">
+<meta name="twitter:image" content="https://gregory-website.pages.dev/assets/share.jpg">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 <title>The Wake-Up Call! | Gregory Arneaud</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="The Wake-Up Call! How You Sleep Is How You Live. A memoir by respiratory therapist and Caribbean sleep health advocate Gregory Arneaud, with a foreword by Dr. Eric Thomas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -81,6 +90,8 @@ p{margin:0}
 .nav a:hover{color:var(--moon)}
 .nav .btn{padding:10px 18px;font-size:.9rem;color:var(--soot)}
 @media (max-width:820px){.nav a:not(.btn){display:none}}
+.mark,.nav .btn{white-space:nowrap}
+@media (max-width:480px){.mark span{display:none}.mark{font-size:.82rem}.nav .btn{padding:9px 15px;font-size:.85rem}}
 
 /* hero */
 .hero{position:relative;background:
@@ -107,11 +118,11 @@ p{margin:0}
 .cover{position:relative;justify-self:center;width:min(100%,360px)}
 .cover::before{content:"";position:absolute;inset:12% -14% 4% -6%;background:radial-gradient(closest-side, rgba(234,164,94,.28), transparent);filter:blur(10px)}
 .cover img{position:relative;display:block;width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.6))}
-.foreword{position:relative;margin-top:16px;text-align:center;font-family:var(--f-mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--haze)}
+.foreword{position:relative;margin-top:16px;display:flex;justify-content:center;gap:.5em;white-space:nowrap;text-align:center;font-family:var(--f-mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--haze)}
 .foreword b{color:var(--moon);font-weight:500}
 @media (max-width:860px){
   .hero-grid{grid-template-columns:1fr}
-  .cover{width:min(72%,300px);order:-1}
+  .cover{width:min(58%,250px);order:-1}
 }
 
 /* sleep study strip */
@@ -125,14 +136,14 @@ p{margin:0}
 .readout output{font-size:1.35rem;color:var(--moon);line-height:1.1}
 .readout .o2{color:var(--ember)}
 .readout .state{font-size:.95rem;color:var(--rose);min-width:15ch}
-.trace-box{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:6px;background:var(--ink);border:1px solid var(--line-night)}
+.trace-box{overflow-x:auto;scrollbar-width:thin;-webkit-overflow-scrolling:touch;border-radius:6px;background:var(--ink);border:1px solid var(--line-night)}
 .trace-box svg{display:block;width:100%;min-width:700px;height:auto}
 .trace-note{margin-top:10px;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.06em;color:var(--haze)}
 
 /* the book */
 .book{background:linear-gradient(180deg,var(--ink) 0%,var(--ink-2) 100%)}
 .book-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px);align-items:start}
-.book h2{font-weight:800;font-variation-settings:"wdth" 110;font-size:var(--step-3);text-transform:uppercase;letter-spacing:-.005em;margin:18px 0 22px}
+.book h2{color:var(--moon);font-weight:800;font-variation-settings:"wdth" 110;font-size:var(--step-3);text-transform:uppercase;letter-spacing:-.005em;margin:18px 0 22px}
 .book .intro{display:flex;flex-direction:column;gap:18px;color:var(--haze);min-width:0}
 .book .intro p:first-of-type{color:var(--moon)}
 .learn{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-night);min-width:0}
@@ -169,7 +180,7 @@ p{margin:0}
 .verdict{border-top:1px solid var(--line-night);padding-top:16px;display:flex;gap:14px;align-items:flex-start}
 .verdict .n{font-family:var(--f-mono);font-size:1.6rem;line-height:1;color:var(--ember);font-variant-numeric:tabular-nums;min-width:2ch}
 .verdict p{font-size:1.02rem}
-.fine{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.04em;color:var(--haze)}
+.check > .fine, .fine{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.04em;color:var(--haze)}
 @media (max-width:900px){.signs-grid{grid-template-columns:1fr}}
 
 /* story: dusk */
@@ -335,7 +346,7 @@ p{margin:0}
           </div>
         </div>
         <div class="trace-box" role="img" aria-label="Illustration of an overnight sleep study: steady snoring breaths, then 16 seconds with almost no airflow, a large recovery gasp, while blood oxygen drops from 96 to 84 percent before recovering.">
-          <svg id="trace" viewBox="0 0 1000 270" aria-hidden="true"></svg>
+          <svg id="trace" viewBox="0 0 1000 276" aria-hidden="true"></svg>
         </div>
         <p class="trace-note">Illustrative trace of an obstructive apnea event, drawn for this page. Not patient data.</p>
       </div>
@@ -507,106 +518,140 @@ p{margin:0}
   /* ---------- Sleep-study trace ---------- */
   var svg = document.getElementById('trace');
   var NS = 'http://www.w3.org/2000/svg';
-  var T = 60, W = 1000;
-  var X = function(t){ return t / T * W; };
+  var T = 60, W = 1000, G = 58;                 // 60 s of trace, left gutter for the % scale
+  var X = function(t){ return G + t / T * (W - G - 8); };
+
+  // Smooth interpolation through keyframes, so nothing in the body ever has a corner.
+  function ease(u){ return u*u*(3-2*u); }
+  function keyed(frames, t){
+    if (t <= frames[0][0]) return frames[0][1];
+    for (var i = 1; i < frames.length; i++){
+      if (t <= frames[i][0]){
+        var a = frames[i-1], b = frames[i];
+        return a[1] + (b[1]-a[1]) * ease((t-a[0])/(b[0]-a[0]));
+      }
+    }
+    return frames[frames.length-1][1];
+  }
+  // breath size: normal → stops (obstructive apnea) → recovery gasp → normal → shallow (hypopnea) → normal
+  var AMP = [[0,1],[20.6,1],[21.4,.06],[37,.06],[37.9,1.75],[40.5,1.25],[43,1],[48.6,1],[50,.42],[54.2,.42],[55.6,1],[60,1]];
+  // snoring vibration rides on each inhale
+  var SNORE = [[0,1],[20,1],[21,0],[43.5,0],[45,1],[48,1],[49.4,0],[60,0]];
+  // oxygen lags breathing by several seconds
+  var O2 = [[0,96],[26,96],[41,84],[46.5,95.5],[53.5,95.5],[57.5,92],[60,94.5]];
   function airflow(t){
     var b = Math.sin(2*Math.PI*t/4.2);
-    var amp = 1;
-    if (t >= 21 && t < 37) amp = 0.06;
-    else if (t >= 37 && t < 41) amp = 1.85 - (t-37)*0.2;
-    else if (t >= 49 && t < 55) amp = 0.4;
-    var snoring = (t < 21 || (t > 44 && t < 49));
-    var s = snoring ? 0.2*Math.sin(2*Math.PI*t*7.3)*Math.max(0,b) : 0;
-    return amp*b + s;
+    var snore = keyed(SNORE,t) * 0.2 * Math.sin(2*Math.PI*t*7.3) * Math.max(0,b);
+    return keyed(AMP,t) * b + snore;
   }
-  function spo2(t){
-    if (t < 27) return 96;
-    if (t < 41) return 96 - (t-27)/14*12;
-    if (t < 46) return 84 + (t-41)/5*11.5;
-    if (t < 54) return 95.5;
-    if (t < 58) return 95.5 - (t-54)/4*4;
-    return 91.5 + (t-58)/2*4.5;
-  }
+  function spo2(t){ return keyed(O2,t); }
   function state(t){
     if (t < 21) return 'Snoring';
-    if (t < 37) return 'No airflow';
-    if (t < 41) return 'Gasp, recovery';
-    if (t < 49) return 'Snoring';
+    if (t < 37.5) return 'No airflow';
+    if (t < 42) return 'Gasp, recovery';
+    if (t < 49.4) return 'Snoring';
     if (t < 55) return 'Shallow';
     return 'Breathing';
   }
-  var A0 = 78, AS = 34;            // airflow lane centre and scale
-  var OY = function(v){ return 250 - (v-80)/20*86; }; // SpO2 lane: 80% at y=250, 100% at y=164
+  var A0 = 80, AS = 32;                                   // airflow lane: centre and scale
+  var OY = function(v){ return 252 - (v-80)/20*84; };     // SpO2 lane: 80% at y=252, 100% at y=168
 
-  function el(name, attrs, text){
+  function el(name, attrs, text, parent){
     var e = document.createElementNS(NS, name);
     for (var k in attrs) e.setAttribute(k, attrs[k]);
     if (text) e.textContent = text;
-    svg.appendChild(e); return e;
+    (parent || svg).appendChild(e); return e;
   }
-  var night = getComputedStyle(document.documentElement);
-  var cRose = night.getPropertyValue('--rose').trim() || '#c99aa0';
-  var cEmber = night.getPropertyValue('--ember').trim() || '#eaa45e';
-  var cHaze = night.getPropertyValue('--haze').trim() || '#ac9ca6';
-  var cMoon = night.getPropertyValue('--moon').trim() || '#f3ebe8';
-  var cInk = night.getPropertyValue('--ink').trim() || '#0e0c13';
+  var css = getComputedStyle(document.documentElement);
+  var cRose = css.getPropertyValue('--rose').trim() || '#c99aa0';
+  var cEmber = css.getPropertyValue('--ember').trim() || '#eaa45e';
+  var cHaze = css.getPropertyValue('--haze').trim() || '#ac9ca6';
+  var cMoon = css.getPropertyValue('--moon').trim() || '#f3ebe8';
+  var cInk = css.getPropertyValue('--ink').trim() || '#0e0c13';
+  var mono = 'IBM Plex Mono, ui-monospace, monospace', sans = 'Archivo, Arial, sans-serif';
 
-  // apnea shading
-  el('rect',{x:X(21),y:8,width:X(37)-X(21),height:254,fill:cRose,'fill-opacity':'0.08'});
-  // grid lines for SpO2
+  // background layer: event shading, gridlines, scale
+  el('rect',{x:X(21),y:6,width:X(37.5)-X(21),height:264,fill:cRose,'fill-opacity':'0.08'});
+  el('line',{x1:G,x2:W,y1:A0,y2:A0,stroke:cMoon,'stroke-opacity':'0.07'});
   [100,90,80].forEach(function(v){
-    el('line',{x1:0,x2:W,y1:OY(v),y2:OY(v),stroke:cMoon,'stroke-opacity':v===90?'0.16':'0.08','stroke-dasharray':'3 5'});
-    el('text',{x:W-6,y:OY(v)-5,'text-anchor':'end',fill:cHaze,'font-family':'IBM Plex Mono, monospace','font-size':11},v+'%');
+    el('line',{x1:G,x2:W,y1:OY(v),y2:OY(v),stroke:cMoon,'stroke-opacity':v===90?'0.18':'0.09','stroke-dasharray':'3 5'});
+    el('text',{x:G-10,y:OY(v)+4,'text-anchor':'end',fill:cHaze,'font-family':mono,'font-size':11},v+'%');
   });
-  el('line',{x1:0,x2:W,y1:A0,y2:A0,stroke:cMoon,'stroke-opacity':'0.06'});
-  // lane labels
-  el('text',{x:10,y:22,fill:cHaze,'font-family':'IBM Plex Mono, monospace','font-size':11,'letter-spacing':'1.5'},'AIRFLOW');
-  el('text',{x:10,y:158,fill:cHaze,'font-family':'IBM Plex Mono, monospace','font-size':11,'letter-spacing':'1.5'},'SpO₂');
+  el('line',{x1:G,x2:G,y1:6,y2:270,stroke:cMoon,'stroke-opacity':'0.12'});
 
+  // the two signals
   var dA = '', dO = '';
-  for (var t = 0; t <= T; t += 0.04){
-    dA += (t===0?'M':'L') + X(t).toFixed(1) + ' ' + (A0 - airflow(t)*AS).toFixed(1);
-    dO += (t===0?'M':'L') + X(t).toFixed(1) + ' ' + OY(spo2(t)).toFixed(1);
+  for (var i = 0, t; i <= 1500; i++){
+    t = i / 1500 * T;
+    dA += (i===0?'M':'L') + X(t).toFixed(1) + ' ' + (A0 - airflow(t)*AS).toFixed(1);
+    dO += (i===0?'M':'L') + X(t).toFixed(1) + ' ' + OY(spo2(t)).toFixed(1);
   }
-  el('path',{d:dA,fill:'none',stroke:cRose,'stroke-width':1.6,'stroke-linejoin':'round'});
-  el('path',{d:dO,fill:'none',stroke:cEmber,'stroke-width':2.2,'stroke-linejoin':'round'});
+  el('path',{d:dA,fill:'none',stroke:cRose,'stroke-width':1.6,'stroke-linejoin':'round','stroke-linecap':'round'});
+  el('path',{d:dO,fill:'none',stroke:cEmber,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'});
 
-  // annotations
-  var ann = {fill:cMoon,'font-family':'Archivo, Arial, sans-serif','font-size':13,'font-weight':600};
-  el('text',Object.assign({x:X(29),y:30,'text-anchor':'middle'},ann),'Breathing stops · 16 sec');
-  el('text',Object.assign({x:X(39),y:16,'text-anchor':'middle'},ann),'Gasp');
-  el('text',Object.assign({x:X(10.5),y:132,'text-anchor':'middle'},ann,{fill:cHaze,'font-weight':500}),'Snoring');
-  el('circle',{cx:X(41),cy:OY(84),r:4,fill:cEmber});
-  el('text',Object.assign({x:X(41)+10,y:OY(84)+4},ann,{fill:cEmber}),'Oxygen falls to 84%');
+  // monitor sweep: a bright line with a short blank band ahead of it
+  var gap = el('rect',{x:0,y:4,width:24,height:268,fill:cInk});
+  var head = el('rect',{x:0,y:4,width:2,height:268,fill:cMoon,'fill-opacity':'0.8'});
 
-  // playhead
-  var head = el('rect',{x:0,y:4,width:2,height:262,fill:cMoon,'fill-opacity':'0.75'});
-  var gap = el('rect',{x:0,y:4,width:26,height:262,fill:cInk});
+  // labels sit above everything, with a dark halo so the sweep never cuts them
+  var halo = {stroke:cInk,'stroke-width':5,'stroke-linejoin':'round','paint-order':'stroke'};
+  function label(x, y, text, extra){
+    var a = Object.assign({x:x,y:y,'font-family':sans,'font-size':13,'font-weight':600,fill:cMoon}, halo, extra || {});
+    return el('text', a, text);
+  }
+  label(G+10, 22, 'AIRFLOW', {'font-family':mono,'font-size':11,'font-weight':400,fill:cHaze,'letter-spacing':'1.5'});
+  label(G+10, 160, 'SpO₂', {'font-family':mono,'font-size':11,'font-weight':400,fill:cHaze,'letter-spacing':'1.5'});
+  label(X(10.5), 22, 'Snoring', {'text-anchor':'middle',fill:cHaze,'font-weight':500});
+  label(X(29.2), 30, 'Breathing stops · 16 sec', {'text-anchor':'middle'});
+  label(X(41.6), 24, 'Gasp', {});
+  label(X(52.2), 128, 'Shallow', {'text-anchor':'middle',fill:cHaze,'font-weight':500});
+  el('circle',{cx:X(41),cy:OY(84),r:4.5,fill:cEmber,stroke:cInk,'stroke-width':2});
+  label(X(41), OY(84)+27, 'Oxygen falls to 84%', {'text-anchor':'middle',fill:cEmber});
 
   var rTime = document.getElementById('r-time'), rO2 = document.getElementById('r-o2'), rState = document.getElementById('r-state');
   function pad(n){ return (n<10?'0':'')+n; }
+  var lastSec = -1, lastO2 = -1, lastState = '';
+  var box = svg.parentNode, userAt = -1e9;
+  ['pointerdown','touchstart','wheel'].forEach(function(ev){ box.addEventListener(ev, function(){ userAt = Date.now(); }, {passive:true}); });
+  function follow(x){
+    var over = box.scrollWidth - box.clientWidth;
+    if (over <= 0 || Date.now() - userAt < 4000) return;
+    var px = x / W * box.scrollWidth;
+    box.scrollLeft = Math.max(0, Math.min(over, px - box.clientWidth * 0.45));
+  }
   function show(t){
     var x = X(t);
+    follow(x);
     head.setAttribute('x', x-1);
-    gap.setAttribute('x', x+2);
-    var s = Math.floor(t);
-    rTime.textContent = '02:47:' + pad(s);
-    rO2.textContent = Math.round(spo2(t)) + '%';
-    rState.textContent = state(t);
+    gap.setAttribute('x', Math.min(x+2, W));
+    gap.setAttribute('width', Math.max(0, Math.min(24, W - x - 2)));
+    var sec = Math.floor(t), o2 = Math.round(spo2(t)), st = state(t);
+    if (sec !== lastSec){ rTime.textContent = '02:47:' + pad(sec); lastSec = sec; }
+    if (o2 !== lastO2){ rO2.textContent = o2 + '%'; lastO2 = o2; }
+    if (st !== lastState){ rState.textContent = st; lastState = st; }
   }
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduce){
-    gap.remove(); show(41);
+    gap.remove(); show(41); setTimeout(function(){ follow(X(33)); }, 0);
   } else {
-    var start = null, LOOP = 24000; // 60 s of trace shown over 24 s
+    var LOOP = 24000, elapsed = 0, prev = null, running = true;   // 60 s of trace, played over 24 s
     function frame(now){
-      if (start === null) start = now;
-      var t = ((now - start) % LOOP) / LOOP * T;
-      show(t);
-      requestAnimationFrame(frame);
+      if (prev !== null) elapsed += Math.min(now - prev, 100);
+      prev = now;
+      show((elapsed % LOOP) / LOOP * T);
+      if (running) requestAnimationFrame(frame); else prev = null;
     }
     show(0);
-    requestAnimationFrame(frame);
+    if ('IntersectionObserver' in window){
+      running = false;
+      new IntersectionObserver(function(entries){
+        var vis = entries[0].isIntersecting;
+        if (vis && !running){ running = true; prev = null; requestAnimationFrame(frame); }
+        else if (!vis){ running = false; }
+      }).observe(svg);
+    } else {
+      requestAnimationFrame(frame);
+    }
   }
 
   /* ---------- Sleep check ---------- */
